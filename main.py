@@ -15,7 +15,7 @@ def getBeijinTime():
     passwd_list = passwd_mi.split('#')
     if len(user_list) == len(passwd_list):
         for user_mi, passwd_mi in zip(user_list, passwd_list):
-            main(user_mi,passwd_mi,25999, 29999)
+            main(user_mi,passwd_mi,8000, 10000)
             #print(msg_mi)
 
 
@@ -90,7 +90,8 @@ def main(_user,_passwd,min_1, max_1):
         print("登陆失败！")
         return "login fail!"
 
-    t = get_time()
+    # t = get_time()
+    t=datetime.now().timestamp()
 
     app_token = get_app_token(login_token)
 
