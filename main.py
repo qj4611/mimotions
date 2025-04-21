@@ -91,7 +91,7 @@ def main(_user,_passwd,min_1, max_1):
         return "login fail!"
 
     # t = get_time()
-    t=datetime.now().timestamp()
+    t=datetime.datetime.now().timestamp()
 
     app_token = get_app_token(login_token)
 
